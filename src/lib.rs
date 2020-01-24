@@ -20,13 +20,13 @@ pub fn values(input: TokenStream) -> TokenStream {
     };
 
     let variants = dataEnum.variants;
-    let variantCount = variants.len();
+    let variant_count = variants.len();
     let variants = variants.iter();
 
     let expanded = quote! {
 
         impl #name {
-            fn values() -> [#name; #variantCount]{
+            pub fn values() -> [#name; #variantCount]{
                 [#(
                     #name::#variants,
                 )*]
