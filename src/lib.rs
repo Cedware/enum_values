@@ -26,7 +26,7 @@ pub fn values(input: TokenStream) -> TokenStream {
     let expanded = quote! {
 
         impl #name {
-            pub fn values() -> [#name; #variantCount]{
+            pub fn values() -> [#name; #variant_count]{
                 [#(
                     #name::#variants,
                 )*]
