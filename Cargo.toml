@@ -1,5 +1,5 @@
 [package]
-name = "enum_values"
+name = "macro_values"
 version = "0.1.0"
 authors = ["cedric"]
 edition = "2018"
